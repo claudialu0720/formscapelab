@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formscape Lab | 合域设计</title>
+    <meta name="description" content="合域设计 - 构筑物理空间，释放数字潜能">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas (gradient blobs with blur) -->
+    <canvas id="bg-canvas"></canvas>
+    <!-- Mesh Canvas (crisp interactive grid, no blur) -->
+    <canvas id="mesh-canvas"></canvas>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-en">Formscape Lab</span>
+                <span class="logo-cn">合域设计</span>
+            </a>
+            <nav class="nav">
+                <a href="#about">关于我们</a>
+                <a href="#domains">领域</a>
+                <a href="#contact">联系</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">FORMSCAPE LAB</h1>
+            <div class="hero-tagline bilingual-stacked">
+                <p class="cn">构筑物理空间，释放数字潜能</p>
+                <p class="en">Forming Physical Realities, Unlocking Digital Futures</p>
+            </div>
+            <div class="hero-description bilingual-stacked">
+                <p class="cn">合域设计，以无界思维重塑体验。从空间规划、文旅策划到视觉创新与AI技术，<br>我们为多维度的商业挑战提供全链路解决方案。</p>
+                <p class="en">Formscape Lab redefines experiences through boundary-breaking thinking. From spatial planning and cultural tourism strategy to visual innovation and AI technology, we provide end-to-end solutions for multidimensional business challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-title">
+                <h2 class="bilingual-inline">
+                    <span class="cn">关于合域</span>
+                    <span class="separator">/</span>
+                    <span class="en">About</span>
+                </h2>
+            </div>
+            <div class="about-content bilingual-stacked">
+                <p class="cn">"合域"意味着融合与跨界。在 Formscape Lab，我们将感性的视觉创意与理性的工程技术相连，以设计的力量驱动商业与科技的演进。</p>
+                <p class="en">"Formscape" embodies convergence and cross-disciplinary innovation. At Formscape Lab, we bridge intuitive visual creativity with rational engineering, driving the evolution of business and technology through the power of design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domains Section -->
+    <section class="domains" id="domains">
+        <div class="domains-container">
+            <h2 class="domains-heading bilingual-inline">
+                <span class="cn">领域</span>
+                <span class="separator">/</span>
+                <span class="en">Domains</span>
+            </h2>
+            
+            <div class="accordion">
+                <!-- Domain 01 -->
+                <div class="accordion-item fade-in">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-number">01</span>
+                        <div class="accordion-title-group">
+                            <span class="accordion-title-en">Spatial & Environmental</span>
+                            <span class="accordion-title-cn">空间与环境体验</span>
+                        </div>
+                        <span class="accordion-icon"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-intro bilingual-stacked">
+                            <p class="cn">从宏观城市脉络到微观室内场景，我们重新定义人与空间的交互方式。</p>
+                            <p class="en">From macro urban contexts to micro interior scenes, we redefine how people interact with spaces.</p>
+                        </div>
+                        <div class="accordion-services">
+                            <h4>涵盖服务 <span class="service-label-en">/ Services</span></h4>
+                            <p>城市规划与设计咨询、建筑设计咨询、景观设计咨询、室内设计咨询、装潢设计、场景设计服务。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domain 02 -->
+                <div class="accordion-item fade-in">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-number">02</span>
+                        <div class="accordion-title-group">
+                            <span class="accordion-title-en">Visual & Cultural</span>
+                            <span class="accordion-title-cn">视觉系统与文化创意</span>
+                        </div>
+                        <span class="accordion-icon"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-intro bilingual-stacked">
+                            <p class="cn">塑造具有持久生命力的品牌内核，通过视觉语言和文化内容链接受众。</p>
+                            <p class="en">We build enduring brand cores that connect with audiences through visual language and cultural content.</p>
+                        </div>
+                        <div class="accordion-services">
+                            <h4>涵盖服务 <span class="service-label-en">/ Services</span></h4>
+                            <p>品牌管理策划、平面设计、美术设计、图文设计制作、网页设计、文创产品设计、文化传播、文化活动策划、展览展示策划。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domain 03 -->
+                <div class="accordion-item fade-in">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-number">03</span>
+                        <div class="accordion-title-group">
+                            <span class="accordion-title-en">Industrial & Engineering</span>
+                            <span class="accordion-title-cn">工业与工程管理</span>
+                        </div>
+                        <span class="accordion-icon"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-intro bilingual-stacked">
+                            <p class="cn">兼顾美学与落地，以严谨的工程思维保障设计的完美实现。</p>
+                            <p class="en">Balancing aesthetics and execution, we ensure flawless design realization through rigorous engineering thinking.</p>
+                        </div>
+                        <div class="accordion-services">
+                            <h4>涵盖服务 <span class="service-label-en">/ Services</span></h4>
+                            <p>工业设计、工程管理服务、工程造价咨询业务。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domain 04 -->
+                <div class="accordion-item fade-in">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-number">04</span>
+                        <div class="accordion-title-group">
+                            <span class="accordion-title-en">Digital & AI Tech</span>
+                            <span class="accordion-title-cn">数字科技与人工智能</span>
+                        </div>
+                        <span class="accordion-icon"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-intro bilingual-stacked">
+                            <p class="cn">拥抱前沿科技，通过数字资产与AI技术驱动未来的商业创新。</p>
+                            <p class="en">Embracing cutting-edge technology, we drive future business innovation through digital assets and AI.</p>
+                        </div>
+                        <div class="accordion-services">
+                            <h4>涵盖服务 <span class="service-label-en">/ Services</span></h4>
+                            <p>人工智能应用软件开发、电脑动画设计、数字内容制作服务、数字文化创意内容应用服务、核心技术服务与推广。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domain 05 -->
+                <div class="accordion-item fade-in">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="accordion-number">05</span>
+                        <div class="accordion-title-group">
+                            <span class="accordion-title-en">Tourism & Strategic Consulting</span>
+                            <span class="accordion-title-cn">文旅开发与战略咨询</span>
+                        </div>
+                        <span class="accordion-icon"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-intro bilingual-stacked">
+                            <p class="cn">洞察市场趋势，为文旅项目和商业决策提供全盘策略与智慧赋能。</p>
+                            <p class="en">With market insight, we provide comprehensive strategies and intelligent solutions for cultural tourism projects.</p>
+                        </div>
+                        <div class="accordion-services">
+                            <h4>涵盖服务 <span class="service-label-en">/ Services</span></h4>
+                            <p>文旅开发项目策划咨询、智慧文旅咨询服务、技术与信息综合咨询。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="coming-soon" id="works">
+        <div class="coming-soon-container fade-in">
+            <h2 class="coming-soon-title">Selected Works</h2>
+            <p class="coming-soon-text bilingual-stacked">
+                <span class="cn">项目正在梳理中，我们期待将更好的作品呈现给您。</span>
+                <span class="en">Our projects are being curated. We look forward to presenting our best work to you.</span>
+            </p>
+            <p class="coming-soon-status">Archiving... Coming Soon.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <p class="footer-tagline">Let's form the future scape together.</p>
+            <div class="footer-info">
+                <p>业务洽谈：formscapelab <span class="footer-note">(微信号 / WeChat)</span></p>
+                <p>地址：广州市增城区宁西街金融大道8号</p>
+            </div>
+            <p class="footer-copyright">© 2026 Formscape Lab 合域设计. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
